@@ -9,7 +9,7 @@ We will release a beta version soon. Keep tuned!
 
 #########################################################################################
 Installation:
-(1) Download the folder with the following Matlab functions. 
+(1) Download the folder with the following Matlab functions:
 Kinship_Calculate.m
 Objectivefcn_ATOMM.m
 ATOMM_NULL.m
