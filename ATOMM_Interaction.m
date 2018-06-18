@@ -54,7 +54,7 @@ result(ncount,1:2)=Gh(index_h(i),1:2);
 result(ncount,3:4)=Gp(index_p(j),1:2);                                      
 result(ncount,5)=((Y-mu)'*Sigma_inv*g)^2/(deno*sigma_g);
 result(ncount,6)=1-chi2cdf(result(ncount,5),1);
-fprintf(fileID,'%d\t%d\t%d\t%d\t%.3f\t%.3f\n',result(ncount,1),result(ncount,2),result(ncount,3),result(ncount,4),result(ncount,5),result(ncount,6));
+fprintf(fileID,'%d\t%d\t%d\t%d\t%.3f\t%.12f\n',result(ncount,1),result(ncount,2),result(ncount,3),result(ncount,4),result(ncount,5),result(ncount,6));
 end
 end
 end

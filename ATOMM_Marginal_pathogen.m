@@ -43,7 +43,7 @@ sigma_g=sigma_g/(nh-1);
 result(i,1:2)=Gh(index(i),1:2);
 result(i,3)=(temY*g)^2/(deno*sigma_g);
 result(i,4)=1-chi2cdf(result(i,3),1);
-fprintf(fileID,'%d\t%d\t%.3f\t%.3f\n',result(i,1),result(i,2),result(i,3),result(i,4));
+fprintf(fileID,'%d\t%d\t%.3f\t%.12f\n',result(i,1),result(i,2),result(i,3),result(i,4));
 
 end
 
