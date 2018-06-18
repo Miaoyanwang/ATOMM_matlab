@@ -5,7 +5,7 @@ Gp=dlmread('input/sequence_pathogen.txt');%% read in pathogen genotype file.
 
 Phenotype=dlmread('input/phenotype.txt'); %% read in phentype file.
 
-[herit,Sigma]=ATOMM_Null(Kinship_h,Kinship_p,Phenotype);%% estimate heritability under the null model; Results are saved in the "output/estimate.txt" file.
+[herit,Sigma]=ATOMM_Null(Kinship_h,Kinship_p,Phenotype);%% estimate heritability under the null model; Results are saved in the "output/estimate.txt" file. In the matlab console, an window named Optimization PlotFcs will pop out. You should expect to observe the decreasment of the objective function. 
 
 index=1:100; %% specify which host SNP to be included in the marginal association analysis. In this example, we only test the first 100 host SNPs from the "input/sequence_host.txt" file. If you want to include all host SNPs in the analysis, please use "index=1:N", where N is the total number of SNPs in the host genotype file.   
 

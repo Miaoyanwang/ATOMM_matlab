@@ -82,7 +82,7 @@ Each row of the phenotype file specifies the observation for one host-pathogen p
 (4) the columns 4 -- (2+p) are options. If the study includes additional covariates, please include them as these columns in the file. In the example input file we provided in "phenotype.txt", the study has two covariates (columns 3 and column 4).
 (last column) the last column of the phenotype file is the phenotype measurement of interest. 
 
-
+#########################################################################################
 Output:
 
 #########################################################################################
