@@ -20,6 +20,7 @@ nh=size(Gh);
 nh=nh(2)-2;
 np=size(Gp);
 np=np(2)-2;
+p=nY(2)-3;
 
 X=Phenotype(:,3:(nY(2)-1));
 Y=Phenotype(:,nY(2));
@@ -33,13 +34,14 @@ Sigma_inv=inv(Sigma);
 result=zeros(length(index_h)*length(index_p),6);
 ncount=0;
 
+
 for i = 1:length(index_h)
 for j = 1:length(index_p)
 ncount=ncount+1;
 gh=Gh(index_h(i),3:(nh+2));
 gp=Gp(index_p(j),3:(np+2));
 X_new=[X';gh(Phenotype(:,1));gp(Phenotype(:,2))]';
-g=X_new(:,2).*X_new(:,3);
+g=X_new(:,(p+1)).*X_new(:,(p+2));
 beta=(X_new'*(Sigma\X_new))\(X_new'*(Sigma\Y));
 mu=X_new*beta;
        
