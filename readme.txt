@@ -69,9 +69,9 @@ Each row of the genotype file specifies the genotype data at one pathogen SNP. T
 ##########################################################################################
 (c) phenotype file from cross-factor design (the default file name is "phenotype.txt")
 
-1  1  1  0.3 ... -0.552
-2  1  1  0.7 ... 0.46
-3  1  1  0 ... -0.556
+1  1  1 -1.8 ... 0.827
+2  1  1 -1.6 ... -0.912
+3  1  1  0.8 ... -0.315
 ...................
 (1) (2) (3) (4) .. (last column)
 
@@ -87,20 +87,24 @@ Output:
 
 #########################################################################################
 (a) heritability estimates (the default file name is "estimate.txt")
-The heritability file contains 4 nonnegative numbers.
-The first number is the proportion of the phenotypical residual variance explained by host genome.
-The second number is the proportion of the phenotypical residual variance explained by pathogen genome.
-The third number is the proportion of the phenotypical residual variance explained by the interaction between host and pathogen genomes. 
-The fourth number is the proportion of the phenotypical residual variance explained by the i.i.d. noise. 
 
-Note the each of these four numbers should be between 0 and 1, and they sum up to 1. 
+0.1324	0.1334	0.3566	0.3777
+(1)	(2)	(3)	(4)
+
+The heritability file contains 4 nonnegative numbers. Each of these four numbers should be between 0 and 1, and they sum up to 1. 
+
+(1)The first number is the proportion of the phenotypical residual variance explained by host genome.
+(2)The second number is the proportion of the phenotypical residual variance explained by pathogen genome.
+(3)The third number is the proportion of the phenotypical residual variance explained by the interaction between host and pathogen genomes. 
+(4)The fourth number is the proportion of the phenotypical residual variance explained by the i.i.d. noise. 
+
 ##########################################################################################
 
 (b) marginal association tests in the host genome (the default file name is "marginal_host.txt")
 
-1	1	0.736	0.391
-1	2	0.553	0.457
-1	3	3.703	0.054
+1	1	0.018	0.894614049661
+1	2	0.916	0.338634397151
+1	3	0.001	0.978073667399
 ..............
 (1) 	(2)	 (3) 	(4) 
 
@@ -115,9 +119,9 @@ Each row of the "marginal_host.txt" file corresponds to one host SNP.
 ##########################################################################################
 (c) marginal association tests in the pathogen genome (the default file name is "marginal_pathogen.txt")
 
-1	1	0.424	0.515
-1	2	0.004	0.951
-1	3	2.859	0.091
+2	550	0.814	0.366801427723
+2	551	0.150	0.698508936922
+2	552	1.084	0.297754730683
 ..............
 (1) 	(2)	 (3) 	(4) 
 
@@ -131,12 +135,13 @@ Each row of the "marginal_pathogen.txt" file corresponds to one pathogen SNP.
 ######################################################################################################
 (d) interaction association tests between host and pathogen SNPs (the default file name is "interaction.txt")
 
-1	1	1	1	0.149	0.699
-1	1	1	2	0.149	0.700
-1	1	1	3	0.150	0.699
+1	20	1	50	0.124	0.724900402022
+1	20	1	51	1.448	0.228810208035
+1	20	1	52	0.003	0.957317302221
 ..............
-1	3	1	1	0.001	0.979
-1	3	1	2	0.001	0.981
+1	27	1	50	0.230	0.631349297954
+1	27	1	51	0.020	0.886994564991
+1	27	1	52	0.940	0.332290276995
 ..............
 (1) 	(2)	 (3) 	(4)     (5)     (6)
 
