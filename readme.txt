@@ -1,3 +1,33 @@
+#########################################################################################
+This software is accompanied by the paper 
+
+"Two-way Mixed-Effects Methods for Joint Association Analyses Using Both Host and Pathogen Genomes. 
+M. Wang, F. Roux, C. Bartoli, C. H.-Chauveau, C. Meyer, H. Lee, D. Roby, M. S. McPeek, and J. Bergelson Proc. Natl. Acad. Sci. (direct submission). Vol. 115 (24), E5440-E5449, 2018."
+
+The current version is still undergoing alpha testing, so it may not be able to handle most input errors. Please read the demo.m file carefully before running your own analysis. 
+We will keep update the software release a beta version soon. Keep tuned!
+
+#########################################################################################
+Installation:
+(1) Download the folder with the following Matlab functions. 
+Kinship_Calculate.m
+Objectivefcn_ATOMM.m
+ATOMM_NULL.m
+ATOMM_Marginal_host.m
+ATOMM_Marginal_pathogen.m
+ATOMM_Interaction.m
+
+(2)Open Matlab Console in your local computer. Choose Home -> Environment -- > Set Path -- > Add Folder ...
+Find the directory of your downloaded folder, then choose Open -- > Save -- > Close
+
+(3)Run demo.m code for an example. 
+We also provide the example input files and output files in the folder.  
+
+(4)If you want to run the analyses on your own data. Please prepare the input files according to the following instruction. Then run the functions as we did in the demo.m.  
+(You may have to change the file names and arguments if necessary). See demo.m for details. 
+
+#########################################################################################
+
 Input:
 
 ##########################################################################################
