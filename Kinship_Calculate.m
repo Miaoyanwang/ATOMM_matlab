@@ -1,3 +1,8 @@
+%%%%% Input: 
+%%%%% G: Genotype file
+%%%%% Description: this function estimates the empricial kinship matrix using genotype data. 
+
+
 function[Kinship,MAF]=Kinship_Calculate(G)
 thresh=0.05;
 dim_G=size(G);

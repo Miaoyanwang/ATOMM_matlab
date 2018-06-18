@@ -1,3 +1,11 @@
+%%%%% Input: 
+%%%%% Phenotype: Phenotype file
+%%%%% Kinship_h: Host empirical kinship matrix
+%%%%% Kinship_p: Pathogen empirical kinship matrix
+
+%%%%% Description: this function performs estimation for two-may mixed effects model. There are four variance components in the model: random host effects, random pathogen effects, random host-pathogen interaction effects, and i.i.d. noise. 
+
+
 function[herit,Sigma]=ATOMM_Null(Kinship_h,Kinship_p,Phenotype)
 estID=fopen('output/estimate.txt','w');
 

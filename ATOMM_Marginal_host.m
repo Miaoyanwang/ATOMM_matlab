@@ -1,3 +1,12 @@
+%%%%% Input: 
+%%%%% Phenotype: Phenotype file
+%%%%% Sigma: Phenotypic covariance matrix with three components 
+%%%%% Gh: Host genotype file
+%%%%% Kinship_h: Host empirical kinship matrix
+%%%%% index: which host SNPs to be tested
+
+%%%%% Description: this function performs retrospective tests for marginal association of host SNPs.
+
 function[result]=ATOMM_Marginal_host(Phenotype,Sigma,Gh,Kinship_h,index)
 
 fileID = fopen('output/marginal_host.txt','w');

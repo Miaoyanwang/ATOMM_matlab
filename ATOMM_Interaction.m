@@ -1,3 +1,15 @@
+%%%%% Input: 
+%%%%% Phenotype: Phenotype file
+%%%%% Sigma: Phenotypic covariance matrix with three components 
+%%%%% Gh: Host genotype file
+%%%%% Gp: Pathogen genotype file
+%%%%% Kinship_h: Host empirical kinship matrix
+%%%%% Kinship_p: Pathogen empirical kinship matrix
+%%%%% index_h: which host SNPs to be tested
+%%%%% index_p: which pathogen SNPs to be tested
+
+%%%%% Description: this function performs retrospective tests for interaction between specified host SNPs and pathogen SNPs. 
+
 function[result]=ATOMM_Interaction(Phenotype,Sigma,Gh,Gp,Kinship_h,Kinship_p,index_h,index_p);
 
 fileID=fopen('output/interaction.txt','w');

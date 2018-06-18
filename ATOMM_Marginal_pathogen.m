@@ -1,3 +1,13 @@
+%%%%% Input: 
+%%%%% Phenotype: Phenotype file
+%%%%% Sigma: Phenotypic covariance matrix with three components 
+%%%%% Gh: Pathogen genotype file
+%%%%% Kinship_h: Pathogen empirical kinship matrix
+%%%%% index: which pathogen SNPs to be tested
+
+%%%%% Description: this function performs retrospective tests for marginal association of pathogen SNPs.
+
+
 function[result]=ATOMM_Marginal_pathogen(Phenotype,Sigma,Gh,Kinship_h,index)
 
 fileID = fopen('output/marginal_pathogen.txt','w');

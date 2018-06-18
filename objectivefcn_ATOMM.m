@@ -1,3 +1,14 @@
+%% Input: 
+%% para: three coefficients in the variance-components model. 
+%% Part1: host kinship 
+%% Part2: pathogen kinship 
+%% Part3: host-by-pathogen kinship 
+%% X: covariates including intercept
+%% Y: phenotype of interest
+%% n: total number of observations
+
+%% Description: This function specifies the objective function, i.e., negative log-likelihood (up to a constant)
+
 function result=objectivefcn_ATOMM(para,Part1,Part2,Part3,X,Y,n)
 thresh=10^(-6);
 if(min(para)<thresh)
