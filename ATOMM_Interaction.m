@@ -1,6 +1,6 @@
 function[result]=ATOMM_Interaction(Phenotype,Sigma,Gh,Gp,Kinship_h,Kinship_p,index_h,index_p);
 
-fileID=fopen('interaction.txt','w');
+fileID=fopen('output/interaction.txt','w');
 
 nY=size(Phenotype);
 n=nY(1);

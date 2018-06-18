@@ -1,5 +1,5 @@
 function[herit,Sigma]=ATOMM_Null(Kinship_h,Kinship_p,Phenotype)
-estID=fopen('estimate.txt','w');
+estID=fopen('output/estimate.txt','w');
 
 nY=size(Phenotype);
 n=nY(1);

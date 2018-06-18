@@ -1,6 +1,6 @@
 function[result]=ATOMM_Marginal_pathogen(Phenotype,Sigma,Gh,Kinship_h,index)
 
-fileID = fopen('marginal_pathogen.txt','w');
+fileID = fopen('output/marginal_pathogen.txt','w');
 
 nY=size(Phenotype);
 n=nY(1);

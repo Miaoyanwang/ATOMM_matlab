@@ -1,6 +1,6 @@
 function[result]=ATOMM_Marginal_host(Phenotype,Sigma,Gh,Kinship_h,index)
 
-fileID = fopen('marginal_host.txt','w');
+fileID = fopen('output/marginal_host.txt','w');
 
 nY=size(Phenotype);
 n=nY(1);
