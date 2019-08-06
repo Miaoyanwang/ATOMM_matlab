@@ -4,8 +4,8 @@ Software accompaniment to:
 "Two-way Mixed-Effects Methods for Joint Association Analyses Using Both Host and Pathogen Genomes. 
 M. Wang, F. Roux, C. Bartoli, C. H.-Chauveau, C. Meyer, H. Lee, D. Roby, M. S. McPeek, and J. Bergelson Proc. Natl. Acad. Sci. (direct submission). Vol. 115 (24), E5440-E5449, 2018."
 
-The current version is still undergoing alpha testing, so it may not be able to handle input errors. Please read the demo.m file carefully before running your own analysis. 
-We will release a beta version soon. Keep tuned!
+The software may not be able to handle input errors. Please read the demo.m file carefully before running your own analysis. 
+
 
 #########################################################################################
 Installation:
